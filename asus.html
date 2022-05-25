@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- This is the style for the header -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="./ezgameicon.png">
+
+
+    <!-- This is just a font that we'll be using. You can remove lines 12-14 if you don't want to use Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>EZGAME - Asus Page</title>
+</head>
+
+<style>
+
+
+
+header{
+    width: 100vw;
+    height: 110px;
+    border-bottom: solid 1px rgba(16, 16, 16, 0.1);
+    font-family: 'Poppins';
+    background-color: #101010;
+    justify-content: center;
+    
+}
+
+header .inner{
+    width: 1400px; /* This is the inner width of the content inside of your header (80%, etc) */
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    background-color: #101010;
+}
+
+header .logo{
+    display: table;
+    height: 100%;
+    float: left;
+    width: 200px;
+}
+
+header .logo2{
+    display: table;
+    height: 100%;
+    float: left;
+    width: 600px;
+}
+
+header .logo div{
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header .logo img{
+    height: 40px;
+    margin-top: 3px; /* Optical alignment of the logo */
+    margin-bottom: 5px;
+}
+
+header nav{
+    float: right;
+    height: 100%;
+}
+
+header nav li{
+    display: table;
+    height: 100%;
+    float: left;
+    margin-right: 30px;
+}
+
+header nav li:last-of-type{
+    margin-right: 0;
+}
+
+header nav span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header nav a{
+    color: white;
+    
+}
+
+header nav .button{
+    background-color: #e27013; /* This HEX is the color of the button */
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+header nav .button:hover{
+    filter: brightness(1.05);
+}
+
+
+/* <!-- body styles below --> */
+
+.card {
+  width:250px;
+  height: 500px !important;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+
+.card:hover {
+  box-shadow: 0 10px 20px 0 #e27013;
+  border-style: dotted;
+}
+
+.centerphoto {
+  background-position: center center;
+  left: 400px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+.search-bar-size {
+  margin-left: 50px;
+  width: 500px;
+}
+
+
+.footer {
+    width: 100vw;
+    height: 260px;
+    font-family: 'Poppins';
+    background-color: #101010;
+    justify-content: center;
+    padding-top: 10px;
+    margin-top: 30px;
+    color:#FFF;
+    
+}
+
+ul.no-bullets {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+  
+}
+
+.f12 {
+  font-size: 12px;
+}
+
+.nohref {
+  text-decoration: none;
+  color:#FFF;
+}
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover {
+  color:#e27013;
+}
+
+
+a:active { text-decoration: none; }
+
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.column-list {
+  column-count: 4 !important;
+}
+
+.img:hover {
+  box-shadow: 0 10px 20px 0 #e27013;
+  border-style: dotted;
+}
+
+.f10 {
+  font-size: 10px;
+}
+
+.f14 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.addtocardbutton {
+  width: 180px;
+  height: 40px;
+  background-color: #e27013;
+  font-family: 'Poppins';
+  color:#FFF;
+  border-color:#FFF;
+
+}
+
+.text-end {
+  font-size: 10px;
+  color:#e27013;
+  text-align: end;
+}
+
+.orangecolor {
+  color:#e27013;
+}
+
+.frame {
+      height: 240px;
+      width: 240px;
+      overflow:visible;
+    }
+    .zoomin img {
+      height: 220px;
+      width: 220px;
+      padding-left: 20px;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
+    }
+    .zoomin img:hover {
+      transform: scale(1.5);
+    }
+
+</style>
+<body>
+    <!-- Start of the header -->
+    <header>
+        <div class="inner">
+            <div class="logo">
+                <div>
+                    <!-- The below line can be an image or a h1, either will work -->
+                    <a href="./ezgame.html">
+                    <img src="./ezgamelogohd.png" alt="Logo"></a>
+                    <!-- <h1>My Logo</h1> -->
+                </div>
+            </div>
+
+            <nav>
+                <!-- Each of the below lines look complicated. There is a reason for this markup though!
+                <li> tag will be the container for the table.
+                <span> will be the part that centers the content inside it
+                <a> is the actual clickable part -->
+                 <li><span><a href="">About</a></span></li>
+                <li><span><a href="">Policy</a></span></li>
+                <li><span><a href="">Warranty</a></span></li>
+                <li><span><a href="" class="button">Contact</a></span></li>
+                <!-- On the line above, remove the class="button" if you don't want the final
+                element to be a button -->
+            </nav>
+
+            <div class="header-container" style="padding-top: 40px">
+              <div class="header">
+                <input class="form-group search-bar-size" placeholder="Search product here...">
+                <button>Search</button>
+            </div>
+            
+        
+         </div>
+
+        </header>
+        <div class="middle">
+          <div class="container py-3">
+            <img src="./asusbanner.png">
+          </div>
+      
+        </div>
+
+
+      <div class="section-container">
+        <div class="container">
+        <br>
+        <h5 style="font-family: 'Poppins'; color:#e27013;">Asus Products</h5>
+            
+          <div class="row">
+            <div class="">
+              <div class="card h-100 py-2" style="display:inline-block">
+                <div class="zoomin frame">
+                <img width="240px" height="240px" src="./resources/3090.jpg">
+                </div>
+                <div class="card-body">
+                  <h6 class="text-center">ASUS ROG STRIX NVIDIA RTX 3080TI 12GB</h6>
+                  <p class= "f10 col text-center">ROG Strix GeForce RTX™ 3080 12GB GDDR6X with LHR offers a buffed-up design that delivers chart-topping thermal performance.</p>
+                  <p class="text-danger f14 text-center"> PHP 49,999</p>
+                  <div class="row">
+                    <div class="col-3">
+                        <p style="text-align:right; font-size: 10px; font-weight: bold;">Rating:</p>
+                    </div>
+                    <div class="col-9 text-end">
+                        <p class="text-end" style="font-weight: bold;"><span><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i></span> 10 sold</p>
+                    </div>
+                    </div>
+                  <div class="col text-center">
+                    <p><button class="addtocardbutton f14">Buy Now!</button></p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="card h-100 py-2" style="display:inline-block">
+                <div class="zoomin frame">
+                <img width="240px" height="240px" src="./resources/tuf3080.jpg">
+                </div>
+                <div class="card-body">
+                  <h6 class="text-center">ASUS GeForce RTX TUF 3080 10GB</h6>
+                  <p class= "f10 col text-center">The Asus TUF Gaming GeForce RTX™ 3080 is buffed-up design with chart-topping thermal performance and all new AI capabilities.</p>
+                  <p class="text-danger f14 text-center"> PHP 60,999</p>
+                  <div class="row">
+                    <div class="col-3">
+                        <p style="text-align:right; font-size: 10px; font-weight: bold;">Rating:</p>
+                    </div>
+                    <div class="col-9 text-end">
+                        <p class="text-end" style="font-weight: bold;"><span><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i></span> 12 sold</p>
+                    </div>
+                    </div>
+                  <div class="col text-center">
+                    <p><button class="addtocardbutton f14">Buy Now!</button></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card h-100 py-2" style="display:inline-block">
+                <div class="zoomin frame">
+                <img width="240px" height="240px" src="./asusbrand/b550.png">
+                </div>
+                <div class="card-body">
+                  <h6 class="text-center">Asus ROG Strix B550 F Gaming WiFi</h6>
+                  <p class= "f10 col text-center">CPU: AMD AM4 Socket 3rd Gen AMD Ryzen™ Processors
+
+                    Memory: 4 x DIMM, upto 128gb, DDR4 4600(O.C)
+                    
+                    Display:
+                    1 x DisplayPort 1.2
+                    1 x HDMI 2.1(4K@60HZ)
+                  </p>
+                  <p class="text-danger f14 text-center"> PHP 8,999</p>
+                  <div class="row">
+                    <div class="col-3">
+                        <p style="text-align:right; font-size: 10px; font-weight: bold;">Rating:</p>
+                    </div>
+                    <div class="col-9 text-end">
+                        <p class="text-end" style="font-weight: bold;"><span><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i></span> 10 sold</p>
+                    </div>
+                    </div>
+                  <div class="col text-center">
+                    <p><button class="addtocardbutton f14">Buy Now!</button></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card h-100 py-2" style="display:inline-block">
+                <div class="zoomin frame">
+                <img width="240px" height="240px" src="./asusbrand/tufgamigncaser.jpg">
+                </div>
+                <div class="card-body">
+                  <h6 class="text-center">ASUS TUF Gaming GT301 Mid-Tower Compact Case</h6>
+                  <p class= "f10 col text-center">Stylishly design: Perforated honeycomb front panel to aid airflow and features a tempered-glass side panel to showcase your build’s internals in the compact case.</p>
+                  <p class="text-danger f14 text-center"> PHP 4,999</p>
+                  <div class="row">
+                    <div class="col-3">
+                        <p style="text-align:right; font-size: 10px; font-weight: bold;">Rating:</p>
+                    </div>
+                    <div class="col-9 text-end">
+                        <p class="text-end" style="font-weight: bold;"><span><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i></span> 20 sold</p>
+                    </div>
+                    </div>
+                  <div class="col text-center">
+                    <p><button class="addtocardbutton f14">Buy Now!</button></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card h-100 py-2" style="display:inline-block">
+                <div class="zoomin frame">
+                <img width="240px" height="240px" src="./asusbrand/asusrouter.jpg">
+                </div>
+                <div class="card-body">
+                  <h6 class="text-center">ASUS ROG Rapture WiFi 6 Gaming Router GT</h6>
+                  <p class= "f10 col text-center">Cutting edge hardware offers the best performance 1.8 GigaHertz Quad Core cpu and 2.5 G gaming port for ultimate performance
+                    </p>
+                  <p class="text-danger f14 text-center"> PHP 21,999</p>
+                  <div class="row">
+                    <div class="col-3">
+                        <p style="text-align:right; font-size: 10px; font-weight: bold;">Rating:</p>
+                    </div>
+                    <div class="col-9 text-end">
+                        <p class="text-end" style="font-weight: bold;"><span><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i></span> 11 sold</p>
+                    </div>
+                    </div>
+                  <div class="col text-center">
+                    <p><button class="addtocardbutton f14">Buy Now!</button></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card h-100 py-2" style="display:inline-block">
+                <div class="zoomin frame">
+                <img width="240px" height="240px" src="./asusbrand/ASUSPSU.jpg">
+                </div>
+                <div class="card-body">
+                  <h6 class="text-center">ASUS ROG STRIX 850W 80 PLUS Gold</h6>
+                  <p class= "f10 col text-center">Axial-tech fan design features a smaller fan hub that facilitates longer blades and a barrier ring that increases downward air pressure.</p>
+                  <p class="text-danger f14 text-center"> PHP 6,999</p>
+                  <div class="row">
+                    <div class="col-3">
+                        <p style="text-align:right; font-size: 10px; font-weight: bold;">Rating:</p>
+                    </div>
+                    <div class="col-9 text-end">
+                        <p class="text-end" style="font-weight: bold;"><span><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i></span> 10 sold</p>
+                    </div>
+                    </div>
+                  <div class="col text-center">
+                    <p><button class="addtocardbutton f14">Buy Now!</button></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card h-100 py-2" style="display:inline-block">
+                <div class="zoomin frame">
+                <img width="240px" height="240px" src="./asusbrand/TUFMONITOR.jpg">
+                </div>
+                <div class="card-body">
+                  <h6 class="text-center">ASUS TUF VG259Q 25″ 1080P IPS 144Hz 1ms Gaming Monitor</h6>
+                  <p class= "f10 col text-center">24. 5” Full HD (1920 x 1080) IPS panel 144Hz refresh rate 1ms (MPRT) response rate gaming monitor with AMD Free Sync for a smooth game play.</p>
+                  <p class="text-danger f14 text-center"> PHP 13,999</p>
+                  <div class="row">
+                    <div class="col-3">
+                        <p style="text-align:right; font-size: 10px; font-weight: bold;">Rating:</p>
+                    </div>
+                    <div class="col-9 text-end">
+                        <p class="text-end" style="font-weight: bold;"><span><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i></span> 70 sold</p>
+                    </div>
+                    </div>
+                  <div class="col text-center">
+                    <p><button class="addtocardbutton f14">Buy Now!</button></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card h-100 py-2" style="display:inline-block">
+                <div class="zoomin frame">
+                <img width="240px" height="240px" src="./asusbrand/ASUSAIO.jpg">
+                </div>
+                <div class="card-body">
+                  <h6 class="text-center">GAsus ROG Strix LC 360 RGB Cooler</h6>
+                  <p class= "f10 col text-center">
+                    Rgb and NCVM of the pump cover can be individually addressed, enhances the aesthetics with a stylish and modern design</p>
+                  <p class="text-danger f14 text-center"> PHP 12,699</p>
+                  <div class="row">
+                    <div class="col-3">
+                        <p style="text-align:right; font-size: 10px; font-weight: bold;">Rating:</p>
+                    </div>
+                    <div class="col-9 text-end">
+                        <p class="text-end" style="font-weight: bold;"><span><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i></span> 40 sold</p>
+                    </div>
+                    </div>
+                  <div class="col text-center">
+                    <p><button class="addtocardbutton f14">Buy Now!</button></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card h-100 py-2" style="display:inline-block">
+                <div class="zoomin frame">
+                <img width="240px" height="240px" src="./asusbrand/ASUSMOUSE.jpg">
+                </div>
+                <div class="card-body">
+                  <h6 class="text-center">ASUS ROG Strix Impact II GUNDAM EDITION</h6>
+                  <p class= "f10 col text-center">Co-designed by pro gamers: Lightweight and ambidextrous design for optimal performance.
+                    Pivoted button mechanism for tactile and fast mouse clicks
+                    </p>
+                  <p class="text-danger f14 text-center"> PHP 1,999</p>
+                  <div class="row">
+                    <div class="col-3">
+                        <p style="text-align:right; font-size: 10px; font-weight: bold;">Rating:</p>
+                    </div>
+                    <div class="col-9 text-end">
+                        <p class="text-end" style="font-weight: bold;"><span><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i></span> 30 sold</p>
+                    </div>
+                    </div>
+                  <div class="col text-center">
+                    <p><button class="addtocardbutton f14">Buy Now!</button></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card h-100 py-2" style="display:inline-block">
+                <div class="zoomin frame">
+                <img width="240px" height="240px" src="./asusbrand/ASUSVIVOBOOK.jpg">
+                </div>
+                <div class="card-body">
+                  <h6 class="text-center">Asus Vivobook Pro M3401QCKM070WS 14″ OLED</h6>
+                  <p class= "f10 col text-center">AMD Ryzen™ 9 5900HX /  NVIDIA® GeForce® RTX™ 3050 Laptop GPU / 16GB DDR4 on board, Memory Max Up to:8GB / 14.0-inch, 2.8K (2880 x 1800)</p>
+                  <p class="text-danger f14 text-center"> PHP 69,999</p>
+                  <div class="row">
+                    <div class="col-3">
+                        <p style="text-align:right; font-size: 10px; font-weight: bold;">Rating:</p>
+                    </div>
+                    <div class="col-9 text-end">
+                        <p class="text-end" style="font-weight: bold;"><span><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i></span> 33 sold</p>
+                    </div>
+                    </div>
+                  <div class="col text-center">
+                    <p><button class="addtocardbutton f14">Buy Now!</button></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card h-100 py-2" style="display:inline-block">
+                <div class="zoomin frame">
+                <img width="240px" height="240px" src="./resources/3050asus.webp">
+                </div>
+                <div class="card-body">
+                  <h6 class="text-center">ASUS Dual GeForce RTX™ 3050 8GB GDDR6 Video Card</h6>
+                  <p class= "f10 col text-center">ASUS Dual GeForce RTX™ 3050 8GB GDDR6 with two powerful Axial-tech fans and a 2-slot design for broad compatibility..</p>
+                  <p class="text-danger f14 text-center"> PHP 19,999</p>
+                  <div class="row">
+                    <div class="col-3">
+                        <p style="text-align:right; font-size: 10px; font-weight: bold;">Rating:</p>
+                    </div>
+                    <div class="col-9 text-end">
+                        <p class="text-end" style="font-weight: bold;"><span><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i></span> 22 sold</p>
+                    </div>
+                    </div>
+                  <div class="col text-center">
+                    <p><button class="addtocardbutton f14">Buy Now!</button></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card h-100 py-2" style="display:inline-block">
+                <div class="zoomin frame">
+                <img width="220px" height="220px" src="./asusbrand/mousepad.png">
+                </div>
+                <div class="card-body">
+                  <h6 class="text-center">ASUS ROG Sheath Mousepad Standard Size</h6>
+                  <p class= "f10 col text-center">Optimized for smooth mouse gliding
+                    Massive dimensions for all your gaming gear
+                    Non-slip ROG red rubber base
+                    Durable anti-fray stitching</p>
+                  <p class="text-danger f14 text-center"> PHP 1,100</p>
+                  <div class="row">
+                    <div class="col-3">
+                        <p style="text-align:right; font-size: 10px; font-weight: bold;">Rating:</p>
+                    </div>
+                    <div class="col-9 text-end">
+                        <p class="text-end" style="font-weight: bold;"><span><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i><i class="fa fa-star text-danger"></i></span> 75 sold</p>
+                    </div>
+                    </div>
+                  <div class="col text-center">
+                    <p><button class="addtocardbutton f14">Buy Now!</button></p>
+                  </div>
+                </div>
+              </div>
+              
+              
+              
+              
+             <!-- last line for catergory -->
+
+
+        </div>
+        
+        
+    
+           <!-- container end -->
+        </div>
+        
+        
+        <br>
+        <br>
+        <h5 style="font-family: 'Poppins'; color:#e27013; text-align: center;">Why not try our EZGAME Specials?</h5>
+        <br>
+        <a href="./gamepartners.html"><img src="./genshinoffers.png"><br></a>
+        <a href="./esportsmerch.html"><img style="padding-top: 5px;" src="./csgosale.png"></a>
+
+
+        
+
+        <!-- section---container --end  -->
+      </div>
+          
+        
+          
+      
+<div class="footer">
+  <div class="container py-4 column-list">
+    <ul style="color:#e27013" class="grid-list column-list">Support</ul>
+   <a href=""> <ul class="f12 nohref"> Customer Service </ul> </a>
+   <a href=""> <ul class="f12 nohref"> Return Exchange </ul> </a>
+   <a href=""> <ul class="f12 nohref"> Order Cancellation</ul> </a>
+   <a href=""> <ul class="f12 nohref"> FAQs </ul> </a>
+   <a href=""> <ul class="f12 nohref"> Store Location </ul> </a>
+   <a href=""> <ul class="f12 nohref"> Warranty </ul> </a>
+   <a href=""> <ul class="f12 nohref"> Franchising </ul> </a>
+   <a href=""> <ul class="f12 nohref"> Replacement </ul> </a>
+   <a href=""> <ul class="f12 nohref"> Repair </ul> </a>
+   <a href=""> <ul class="f12 nohref"> Careers </ul> </a>
+   <a href=""> <ul class="f12 nohref"> Contact Numbers </ul> </a>
+   <a href=""> <ul class="f12 nohref"> Shipping </ul> </a>
+   <a href=""> <ul class="f12 nohref"> Promos </ul> </a>
+   <a href=""> <ul class="f12 nohref"> Sponsorships </ul> </a>
+   <a href=""> <ul class="f12 nohref"> Local Tournaments </ul> </a>
+   <a href="./ezgame.html"><img class="centerphoto"  width="250px" height="80px" src="./ezgamelogohd.png" alt="Logo"></a>
+
+   
+    
+
+
+</div>
+<!-- <a class="nohref" href="./ezgame.html"><p class="text-center f12">© 2021-2022 by EZGAME Co. All Rights Reserved.</p></a> -->
+<p class="text-center f12">All company names, logos and trademarks appearing in this website are the property of their respective owners.</p>
+
+
+
+ </div> 
+
+
+
+</body>
+</html>

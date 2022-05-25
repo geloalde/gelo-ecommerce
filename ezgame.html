@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- This is the style for the header -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="./ezgameicon.png">
+
+
+    <!-- This is just a font that we'll be using. You can remove lines 12-14 if you don't want to use Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>EZGAME - Home Page</title>
+</head>
+
+<style>
+
+
+
+header{
+    width: 100vw;
+    height: 110px;
+    border-bottom: solid 1px rgba(16, 16, 16, 0.1);
+    font-family: 'Poppins';
+    background-color: #101010;
+    justify-content: center;
+    
+}
+
+header .inner{
+    width: 1400px; /* This is the inner width of the content inside of your header (80%, etc) */
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    background-color: #101010;
+}
+
+header .logo{
+    display: table;
+    height: 100%;
+    float: left;
+    width: 200px;
+}
+
+header .logo2{
+    display: table;
+    height: 100%;
+    float: left;
+    width: 600px;
+}
+
+header .logo div{
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header .logo img{
+    height: 40px;
+    margin-top: 3px; /* Optical alignment of the logo */
+    margin-bottom: 5px;
+}
+
+header nav{
+    float: right;
+    height: 100%;
+}
+
+header nav li{
+    display: table;
+    height: 100%;
+    float: left;
+    margin-right: 30px;
+}
+
+header nav li:last-of-type{
+    margin-right: 0;
+}
+
+header nav span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header nav a{
+    color: white;
+    
+}
+
+header nav .button{
+    background-color: #e27013; /* This HEX is the color of the button */
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+header nav .button:hover{
+    filter: brightness(1.05);
+}
+
+
+/* <!-- body styles below --> */
+
+.card {
+  width:  181px;
+  height: 200px;
+  margin-top: 10px;
+  padding-left: 30px;
+}
+
+
+.card:hover {
+  box-shadow: 0 10px 20px 0 #e27013;
+  border-style: dotted;
+}
+
+.centerphoto {
+  background-position: center center;
+  left: 400px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+.search-bar-size {
+  margin-left: 50px;
+  width: 500px;
+}
+
+
+.footer {
+    width: 100vw;
+    height: 260px;
+    font-family: 'Poppins';
+    background-color: #101010;
+    justify-content: center;
+    padding-top: 10px;
+    margin-top: 30px;
+    color:#FFF;
+    
+}
+
+ul.no-bullets {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+  
+}
+
+.f12 {
+  font-size: 12px;
+}
+
+.nohref {
+  text-decoration: none;
+  color:#FFF;
+}
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover {
+  color:#e27013;
+}
+
+
+a:active { text-decoration: none; }
+
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.column-list {
+  column-count: 4 !important;
+}
+
+.img:hover {
+  box-shadow: 0 10px 20px 0 #e27013;
+  border-style: dotted;
+}
+
+.addtocardbutton {
+  width: 110px;
+  height: 40px;
+  background-color: #101010;
+  font-family: 'Poppins';
+  font-size: small;
+  color: white;
+  border-color: #101010;
+  position: relative;
+  margin-left: 10px;
+
+}
+
+.button2:hover {
+  box-shadow: 0 3px 3px 0 #e27013;
+}
+
+</style>
+<body>
+    <!-- Start of the header -->
+    <header>
+        <div class="inner">
+            <div class="logo">
+                <div>
+                    <!-- The below line can be an image or a h1, either will work -->
+                    <a href="./ezgame.html">
+                    <img src="./ezgamelogohd.png" alt="Logo"></a>
+                    <!-- <h1>My Logo</h1> -->
+                </div>
+            </div>
+
+            <nav>
+                <!-- Each of the below lines look complicated. There is a reason for this markup though!
+                <li> tag will be the container for the table.
+                <span> will be the part that centers the content inside it
+                <a> is the actual clickable part -->
+                 <li><span><a href="">About</a></span></li>
+                <li><span><a href="">Policy</a></span></li>
+                <li><span><a href="">Warranty</a></span></li>
+                <li><span><a href="./ezgamelogin.html" class="button">Sign Up</a></span></li>
+                <!-- On the line above, remove the class="button" if you don't want the final
+                element to be a button -->
+            </nav>
+
+            <div class="header-container" style="padding-top: 40px">
+              <div class="header">
+                <input class="form-group search-bar-size" placeholder="Search product here...">
+                <a href="./asus.html"><button class="button2">Search</button></a>
+            </div>
+            
+        
+         </div>
+
+        </header>
+        <div class="middle">
+          <div class="container py-3">
+            <a href="./esportsmerch.html">
+            <img src="./csgosale.png"></a>
+          </div>
+      
+        </div>
+
+
+      <div class="section-container">
+        <div class="container">
+        <br>
+        <h5 style="font-family: 'Poppins'; color:#e27013;">Shop by Category</h5>
+            
+          <div class="row">
+            <div class="">
+              <div class="card py-2 px-3" style="display:inline-block">
+                <a href="./graphicscard.html">
+                <img width="150px" height="150px" src="./resources/3090.jpg"></a>
+                <div class="card-body">
+                  <h6 class="text-center">Graphics Card</h6>
+                </div>
+              </div>
+
+              <div class="card py-2 px-3" style="display:inline-block">
+                <img width="150px" height="150px" src="./resources/proc.jpg">
+                <div class="card-body">
+                  <h6 class="text-center">Processor</h6>
+                </div>
+              </div>
+
+              <div class="card py-2 px-3" style="display:inline-block">
+                <img width="150px" height="150px" src="./resources/mobo2.jpg">
+                <div class="card-body">
+                  <h6 class="text-center">Motherboard</h6>
+                </div>
+              </div>
+
+              <div class="card py-2 px-3" style="display:inline-block">
+                <img width="150px" height="150px" src="./resources/casing.jpg">
+                <div class="card-body">
+                  <h6 class="text-center">Casing</h6>
+                </div>
+              </div>
+
+              <div class="card py-2 px-3" style="display:inline-block">
+                <img width="150px" height="150px" src="./resources/monitor.jpg">
+                <div class="card-body">
+                  <h6 class="text-center">Monitor</h6>
+                </div>
+              </div>
+
+
+              <div class="card py-2 px-3" style="display:inline-block">
+                <img width="150px" height="150px" src="./resources/ram.jpg">
+                <div class="card-body">
+                  <h6 class="text-center">Memory Module</h6>
+                </div>
+              </div>
+
+              <div class="card py-2 px-3" style="display:inline-block">
+                <img width="150px" height="150px" src="./resources/keyboard.png">
+                <div class="card-body">
+                  <h6 class="text-center">Keyboard</h6>
+                </div>
+              </div>
+
+              <div class="card py-2 px-3" style="display:inline-block">
+                <img width="150px" height="150px" src="./resources/mouse.jpg">
+                <div class="card-body">
+                  <h6 class="text-center">Mouse</h6>
+                </div>
+              </div>
+
+              <div class="card py-2 px-3" style="display:inline-block">
+                <img width="150px" height="150px" src="./resources/headset.jpg">
+                <div class="card-body">
+                  <h6 class="text-center">Headset</h6>
+                </div>
+              </div>
+
+              <div class="card py-2 px-3" style="display:inline-block">
+                <img width="150px" height="150px" src="./resources/AIO2.jpg">
+                <div class="card-body">
+                  <h6 class="text-center">Cooling</h6>
+                </div>
+              </div>
+
+              <div class="card py-2 px-3" style="display:inline-block">
+                <img width="150px" height="150px" src="./resources/ssd.jpg">
+                <div class="card-body">
+                  <h6 class="text-center">Storage</h6>
+                </div>
+              </div>
+
+              <div class="card py-2 px-3" style="display:inline-block">
+                <img width="150px" height="150px" src="./resources/psu.jpg">
+                <div class="card-body">
+                  <h6 class="text-center">Power Supply</h6>
+                </div>
+              </div>
+
+              <div class="card py-2 px-3" style="display:inline-block">
+                <img width="150px" height="150px" src="./resources/laptop.jpg">
+                <div class="card-body">
+                  <h6 class="text-center">Laptop</h6>
+                </div>
+              </div>
+
+              <div class="card py-2 px-3" style="display:inline-block">
+                <img width="150px" height="150px" src="./resources/others.png">
+                <div class="card-body">
+                  <h6 class="text-center">Accesories</h6>
+                </div>
+              </div>
+              
+              
+              
+             <!-- last line for catergory -->
+
+
+        </div>
+        
+        
+    
+           <!-- container end -->
+        </div>
+
+        
+
+
+
+
+        <br>
+        <br>
+        <h5 style="font-family: 'Poppins'; color:#e27013;">Newest Arrival</h5>
+
+        <div class="card h-100 py-2 px-3" style="display:inline-block">
+          <img width="150px" height="150px" src="./resources/3080.jpg">
+          <div class="card-body">
+            <h6 class="text-center">ROG Strix GeForce RTX™ 3080</h6>
+            <p class="text-danger text-center" style="font-weight:bold">PHP 80,999</p>
+            <a href="./graphicscard.html"><button type="button" class="addtocardbutton button2" style="margin-left: 5px">Buy Now!</button></a>
+
+          </div>
+        </div>
+
+        <div class="card h-100 py-2 px-3" style="display:inline-block">
+          <img width="150px" height="150px" src="./resources/giga3090.webp">
+          <div class="card-body">
+            <h6 class="text-center">GIGABYTE RTX 3090 VISION OC 24G</h6>
+            <p class="text-danger text-center" style="font-weight:bold">PHP 129,999</p>
+            <button type="button" class="addtocardbutton button2" style="margin-left: 5px">Buy Now!</button>
+
+          </div>
+        </div>
+
+        <div class="card h-100 py-2 px-3" style="display:inline-block">
+          <img width="150px" height="150px" src="./resources/tuf3080.jpg">
+          <div class="card-body">
+            <h6 class="text-center">ASUS GeForce RTX TUF 3080 10GB</h6>
+            <p class="text-danger text-center" style="font-weight:bold">PHP 60,999</p>
+            <button type="button" class="addtocardbutton button2" style="margin-left: 5px">Buy Now!</button>
+
+          </div>
+        </div>
+
+        <div class="card h-100 py-2 px-3" style="display:inline-block">
+          <img width="150px" height="150px" src="./resources/3070ti.jpg">
+          <div class="card-body">
+            <h6 class="text-center">MSI Gaming GeForce RTX 3070 Ti 8GB</h6>
+            <p class="text-danger text-center" style="font-weight:bold">PHP 47,999</p>
+            <button type="button" class="addtocardbutton button2" style="margin-left: 5px">Buy Now!</button>
+
+          </div>
+        </div>
+
+        <div class="card h-100 py-2 px-3" style="display:inline-block">
+          <img width="150px" height="150px" src="./resources/ryzen.jpg">
+          <div class="card-body">
+            <h6 class="text-center">AMD Ryzen 5 5600X 6-Core 3.7 GHz</h6>
+            <p class="text-danger text-center" style="font-weight:bold">PHP 12,999</p>
+            <button type="button" class="addtocardbutton button2" style="margin-left: 5px">Buy Now!</button>
+
+          </div>
+        </div>
+
+        <div class="card h-100 py-2 px-3" style="display:inline-block">
+          <img width="150px" height="150px" src="./resources/aurosmobo.png">
+          <div class="card-body">
+            <h6 class="text-center">B550M Aorus PRO AX WIFI Gaming</h6>
+            <p class="text-danger text-center" style="font-weight:bold">PHP 8,599</p>
+            <button type="button" class="addtocardbutton button2" style="margin-left: 5px">Buy Now!</button>
+
+          </div>
+        </div>
+
+        <div class="card h-100 py-2 px-3" style="display:inline-block">
+          <img width="150px" height="150px" src="./resources/monitor22.png">
+          <div class="card-body">
+            <h6 class="text-center">GIGABYTE G24F IPS up to 165hz Monitor</h6>
+            <p class="text-danger text-center" style="font-weight:bold">PHP 11,999</p>
+            <button type="button" class="addtocardbutton button2" style="margin-left: 5px">Buy Now!</button>
+            <br>
+
+          </div>
+        </div>
+
+        <!-- for brand -->
+
+        <h5 style="font-family: 'Poppins'; color:#e27013; margin-top: 50px;">Shop by Brand</h5>
+
+        <div class="card py-2 px-3" style="display:inline-block">
+          <a href="./asus.html">
+          <img width="150px" height="150px" src="./resources/asus.jpg"></a>
+          <div class="card-body">
+            <h6 class="text-center">ASUS</h6>
+          </div>
+        </div>
+
+        <div class="card py-2 px-3" style="display:inline-block">
+          <img width="150px" height="150px" src="./resources/gigabyte.png">
+          <div class="card-body">
+            <h6 class="text-center">GIGABYTE</h6>
+          </div>
+        </div>
+  
+        <div class="card py-2 px-3" style="display:inline-block">
+          <img width="150px" height="150px" src="./resources/msi.png">
+          <div class="card-body">
+            <h6 class="text-center">MSI</h6>
+          </div>
+        </div>
+
+        <div class="card py-2 px-3" style="display:inline-block">
+          <img width="150px" height="150px" src="./resources/intel.png">
+          <div class="card-body">
+            <h6 class="text-center">INTEL INSIDE</h6>
+          </div>
+        </div>
+
+        <div class="card py-2 px-3" style="display:inline-block">
+          <img width="150px" height="150px" src="./resources/amd.png">
+          <div class="card-body">
+            <h6 class="text-center">AMD-RYZEN</h6>
+          </div>
+        </div>
+
+        <div class="card py-2 px-3" style="display:inline-block">
+          <img width="150px" height="150px" src="./resources/nvidia.jpg">
+          <div class="card-body">
+            <h6 class="text-center">NVIDIA</h6>
+          </div>
+        </div>
+
+        <div class="card py-2 px-3" style="display:inline-block">
+          <img width="150px" height="150px" src="./resources/hyperx.jpg">
+          <div class="card-body">
+            <h6 class="text-center">Kingston</h6>
+          </div>
+        </div>
+
+        <div class="card py-2 px-3" style="display:inline-block">
+          <img width="150px" height="150px" src="./resources/logio.png">
+          <div class="card-body">
+            <h6 class="text-center">LOGITECH</h6>
+          </div>
+        </div>
+
+        <div class="card py-2 px-3" style="display:inline-block">
+          <img width="150px" height="150px" src="./resources/auros.webp">
+          <div class="card-body">
+            <h6 class="text-center">AUROS</h6>
+          </div>
+        </div>
+
+        <div class="card py-2 px-3" style="display:inline-block">
+          <img width="150px" height="150px" src="./resources/corsair.png">
+          <div class="card-body">
+            <h6 class="text-center">CORSAIR</h6>
+          </div>
+        </div>
+
+        <div class="card py-2 px-3" style="display:inline-block">
+          <img width="150px" height="150px" src="./resources/cooler.png">
+          <div class="card-body">
+            <h6 class="text-center">COOLERMASTER</h6>
+          </div>
+        </div>
+
+        <div class="card py-2 px-3" style="display:inline-block">
+          <img width="150px" height="150px" src="./resources/Samsung_Logo.svg.png">
+          <div class="card-body">
+            <h6 class="text-center">SAMSUNG</h6>
+          </div>
+        </div>
+
+        <div class="card py-2 px-3" style="display:inline-block">
+          <img width="150px" height="150px" src="./resources/hp.png">
+          <div class="card-body">
+            <h6 class="text-center">HP</h6>
+          </div>
+        </div>
+
+        <div class="card py-2 px-3" style="display:inline-block">
+          <img width="150px" height="150px" src="./resources/razer.png">
+          <div class="card-body">
+            <h6 class="text-center">RAZER</h6>
+          </div>
+        </div>
+
+
+
+
+
+
+        <br>
+        <br>
+        <h5 style="font-family: 'Poppins'; color:#e27013; margin-top:10px;" class="py-2 px-1">Game Partners</h5>
+        <a href="./gamepartners.html"><img src="./genshinoffers.png"><br></a>
+        <a href="./gamepartners.html"><img style="padding-top: 5px;" src="./pubgoffers.png"></a><br>
+        
+        <h5 style="font-family: 'Poppins'; color:#e27013; margin-top:10px;" class="py-3">Brand Partners</h5>
+        <a href="./asus.html"><img src="./asusbanner.png"><br></a>
+        
+
+
+       
+        
+
+
+
+        <!-- section---container --end  -->
+      </div>
+
+      
+  
+
+   
+          
+      
+<div class="footer">
+  <div class="container py-4 column-list">
+    <ul style="color:#e27013" class="grid-list column-list">Support</ul>
+   <a href=""> <ul class="f12 nohref"> Customer Service </ul> </a>
+   <a href=""> <ul class="f12 nohref"> Return Exchange </ul> </a>
+   <a href=""> <ul class="f12 nohref"> Order Cancellation</ul> </a>
+   <a href=""> <ul class="f12 nohref"> FAQs </ul> </a>
+   <a href=""> <ul class="f12 nohref"> Store Location </ul> </a>
+   <a href=""> <ul class="f12 nohref"> Warranty </ul> </a>
+   <a href=""> <ul class="f12 nohref"> Franchising </ul> </a>
+   <a href=""> <ul class="f12 nohref"> Replacement </ul> </a>
+   <a href=""> <ul class="f12 nohref"> Repair </ul> </a>
+   <a href=""> <ul class="f12 nohref"> Careers </ul> </a>
+   <a href=""> <ul class="f12 nohref"> Contact Numbers </ul> </a>
+   <a href=""> <ul class="f12 nohref"> Shipping </ul> </a>
+   <a href=""> <ul class="f12 nohref"> Promos </ul> </a>
+   <a href=""> <ul class="f12 nohref"> Sponsorships </ul> </a>
+   <a href=""> <ul class="f12 nohref"> Local Tournaments </ul> </a>
+   <a href="./ezgame.html"><img class="centerphoto"  width="250px" height="80px" src="./ezgamelogohd.png" alt="Logo"></a>
+   
+    
+
+
+</div>
+
+<p class="text-center f12">All company names, logos and trademarks appearing in this website are the property of their respective owners.</p>
+
+</div> 
+
+
+
+</body>
+</html>
